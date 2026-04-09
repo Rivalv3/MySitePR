@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Концертный зал "Гармония" - Главная</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f0f0f0;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4a90d9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #4a90d9;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            flex: 1;
+        }
+        h2 {
+            color: #4a90d9;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        li {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+            nav a {
+                margin-right: 0;
+                margin-bottom: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            li {
+                margin: 8px 0;
+            }
+            footer {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Концертный зал "Гармония"</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="schedule.html">Афиша</a>
+        <a href="tickets.html">Купить билеты</a>
+    </nav>
+
+    <div class="container">
+        <h2>Добро пожаловать!</h2>
+        <p>Концертный зал "Гармония" приглашает вас на наши мероприятия!</p>
+
+        <h3>Наши преимущества:</h3>
+        <ul>
+            <li>Отличная акустика зала</li>
+            <li>Вместимость до 500 человек</li>
+            <li>Удобное расположение в центре</li>
+            <li>Доступные цены на билеты</li>
+        </ul>
+
+        <h3>Ближайшие события:</h3>
+        <ul>
+            <li><a href="schedule.html">Симфонический концерт</a></li>
+            <li><a href="schedule.html">Вечер джазовой музыки</a></li>
+            <li><a href="schedule.html">Фестиваль гитарной музыки</a></li>
+        </ul>
+
+        <p style="text-align: center;">
+            <a href="tickets.html" style="background-color: #4a90d9; color: white; padding: 10px 20px; text-decoration: none;">Купить билеты</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2024 Концертный зал "Гармония"</p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+    </footer>
+</body>
+</html>
